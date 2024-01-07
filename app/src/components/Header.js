@@ -1,9 +1,13 @@
+import Hero from './Hero';
+import Results from './Results';
+import ResultList from './ResultsList';
+
 export default function Header() {
     return (
         <div>
         <div className="header-dark">
             <nav className="navbar navbar-dark navbar-expand-md navigation-clean-search">
-                <div className="container"><a className="navbar-brand" href="#">МультиАтлон</a><button className="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span className="sr-only">Toggle navigation</span><span className="navbar-toggler-icon"></span></button>
+                <div className="container"><a className="navbar-brand" href="#"><span> <i className="fa fa-firefox text-light" aria-hidden="true"></i></span>  МультиАтлон</a><button className="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span className="sr-only">Toggle navigation</span><span className="navbar-toggler-icon"></span></button>
                     <div className="collapse navbar-collapse"
                         id="navcol-1">
                         <ul className="nav navbar-nav">
@@ -17,16 +21,8 @@ export default function Header() {
                         </form><span className="navbar-text"><a href="#" className="login">Зарегистрироваться</a></span><a className="btn btn-light action-button" role="button" href="#">Личный кабинет</a></div>
                 </div>
             </nav>
-            <div className="container hero">
-                <div className="row">
-                    <div className="col-md-8 offset-md-2">
-                        <h1 className="text-center">Результаты выступлений спортсменов</h1>
-                        <div className="embed-responsive embed-responsive-16by9">
-                            {/* <iframe className="embed-responsive-item" src="images/hero1.jpg"></iframe> */}
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Hero />
+            <Results />
         </div>
     </div>
     )
