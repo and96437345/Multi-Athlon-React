@@ -1,4 +1,4 @@
-export default function ResultList() {
+export default function ResultsList() {
     return (
         <div className="container">
             <table className="table table-hover">

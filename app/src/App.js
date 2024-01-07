@@ -1,20 +1,16 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Results from './components/Results';
-import ResultsList from './components/ResultsList';
 import Footer from './components/Footer';
-import RegistrationForm from './components/RegistrationForm';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <RegistrationForm />
-      <ResultsList />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Footer />
+      </div>  
+    </Router>       
   );
 }
 

@@ -3,20 +3,16 @@ import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 
 
-const RegistrationForm = () => {
+const LogIn = () => {
   // Состояния для хранения введенных значений и состояния валидации
   const [formData, setFormData] = useState({
     username: '',
     password: '',
-    phone: '',
-    email: '',
   });
 
   const [errors, setErrors] = useState({
     username: '',
     password: '',
-    phone: '',
-    email: '',
   });
 
   // Обработчик изменения значений в форме
@@ -66,7 +62,7 @@ const RegistrationForm = () => {
   return (
     <div className="registrationForm">
       
-      <h2>Регистрация</h2>
+      <h2>Вход</h2>
       <form className="regForm" onSubmit={handleSubmit}>
         {/* Ник */}
         <div className='form__input-field'>
@@ -91,59 +87,12 @@ const RegistrationForm = () => {
           />
           <div className="error">{errors.password}</div>
         </div>
-
-        {/* Номер телефона */}
-        <div className='form__input-field'>
-          <label>Телефон</label>
-          <input
-            type="phone"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-          />
-          <div className="error">{errors.email}</div>
-        </div>
-
-        {/* Номер телефона */}
-        {/* <div className='form__input-field'>
-          <label>Телефон</label>
-          <PhoneInput
-            international
-            defaultcountry="RU"
-            type="text"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-          />
-          <div className="error">{errors.phone}</div>
-        </div> */}
-
-        {/* <PhoneInput
-        international
-  defaultCountry="RU"
-  type="phone"
-            name="phone"
-  value={formData.phone}
-      onChange={handleChange}/> */}
-        
-
-        {/* Электронный адрес */}
-        <div className='form__input-field'>
-          <label>Электронный адрес</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-          <div className="error">{errors.email}</div>
-        </div>
-
+      
         {/* Кнопка отправки */}
-        <button type="submit">Зарегистрироваться</button>
+        <button type="submit">Войти</button>
       </form>
     </div>
   );
 };
 
-export default RegistrationForm;
+export default LogIn;

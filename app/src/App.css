@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+@media (min-width:1300px) {
+  .container {
+    max-width: 1260px;
+  }
+}
+
 .header-dark {
   background:url(../public/stadium.jpg) #444;
   background-size:cover;
@@ -214,7 +222,10 @@ body {
   width: 100%;
   max-width: 100%;
   margin-bottom: 1rem;
-  background-color: transparent;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 22px 8px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 22px 8px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 22px 8px rgba(34, 60, 80, 0.2);
 }
 
 * {
@@ -383,6 +394,13 @@ li{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  -webkit-box-shadow: 0px 0px 11px -1px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 11px -1px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 11px -1px rgba(34, 60, 80, 0.2);
+}
+.registrationForm h2 {
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 form {
@@ -390,10 +408,11 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  -webkit-box-shadow: 0px 0px 11px -1px rgba(34, 60, 80, 0.2);
-  -moz-box-shadow: 0px 0px 11px -1px rgba(34, 60, 80, 0.2);
-  box-shadow: 0px 0px 11px -1px rgba(34, 60, 80, 0.2);
-  padding: 20px 0 40px;
+  padding: 40px 0 40px;
+}
+.regForm {
+  border-radius: 5px;
+  background: #fff;
 }
 .form__input-field {
   display: flex;
@@ -421,3 +440,57 @@ button {
   font-size: 20px;
   color: white;
 }
+
+
+
+/* body{
+  background-color:#545454;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+ }
+ .container{
+  height: 100vh;
+ }
+ .card{
+  width: 380px;
+  border: none;
+  border-radius: 15px;
+  padding: 8px;
+  background-color: #fff;
+  position: relative;
+  height: 370px;
+ }
+ .upper{
+  height: 100px;
+ }
+ .upper img{
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+ }
+ .user{
+  position: relative;
+ }
+ .profile img{
+  height: 80px;
+  width: 80px;
+  margin-top:2px;
+ }
+ .profile{
+  position: absolute;
+  top:-50px;
+  left: 38%;
+  height: 90px;
+  width: 90px;
+  border:3px solid #fff;
+  border-radius: 50%;
+ }
+ .follow{
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 35px;
+ }
+ .stats span{
+  font-size: 29px;
+ } */
