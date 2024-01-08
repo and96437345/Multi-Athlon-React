@@ -4,6 +4,8 @@ import Hero from './Hero';
 import ResultsList from './ResultsList';
 import RegistrationForm from './RegistrationForm';
 import LogIn from './LogIn';
+import ResultsPage from './ResultsPage';
+import PerfomancesPage from './PerfomancesPage';
 
 export default function Header() {
     return (
@@ -32,8 +34,10 @@ export default function Header() {
                     </div>
                 </nav>
                 <Routes>
-                    <Route path='/' exact element={[<Hero />, <ResultsList />]}/>
-                    <Route path='/registrationForm' element={<RegistrationForm />}/>
+                    <Route path='/' exact element={[<Hero />, <ResultsList />]} />
+                    <Route path='/resultsPage' element={<ResultsPage />} />
+                    <Route path='/perfomancesPage' element={<PerfomancesPage />} />
+                    <Route path='/registrationForm' element={<RegistrationForm />} />
                     <Route path='/logIn' element={<LogIn />}/>
                 </Routes>             
             </div>
