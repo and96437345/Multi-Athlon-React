@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 
@@ -89,7 +90,9 @@ const LogIn = () => {
         </div>
       
         {/* Кнопка отправки */}
-        <button type="submit">Войти</button>
+        <button type="submit">
+          <Link to="/profile" className='resultsPage-link'>Войти</Link>
+        </button>
       </form>
     </div>
   );

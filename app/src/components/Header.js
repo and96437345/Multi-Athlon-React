@@ -6,6 +6,7 @@ import RegistrationForm from './RegistrationForm';
 import LogIn from './LogIn';
 import ResultsPage from './ResultsPage';
 import PerfomancesPage from './PerfomancesPage';
+import Profile from './Profile';
 
 export default function Header() {
     return (
@@ -39,6 +40,7 @@ export default function Header() {
                     <Route path='/perfomancesPage' element={<PerfomancesPage />} />
                     <Route path='/registrationForm' element={<RegistrationForm />} />
                     <Route path='/logIn' element={<LogIn />}/>
+                    <Route path='/profile' element={<Profile />} />
                 </Routes>             
             </div>
         </div>
