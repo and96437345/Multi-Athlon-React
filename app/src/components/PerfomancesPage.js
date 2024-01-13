@@ -5,6 +5,13 @@ export default function PerfomancesPage() {
     return (
         <div className="container">
 			<div className="resultsPage">
+			  <nav aria-label="breadcrumb" class="main-breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">Результаты выступлений сортсменов</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Результаты выступлений команды</li>
+                </ol>
+              </nav>
 			<div className="row">
 				<aside className="col-md-3">
 					<div className="card">

@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
 
-@media (min-width:1300px) {
-  .container {
-    max-width: 1260px;
-  }
+a:hover {
+  text-decoration: none;
 }
 
 .header-dark {
   background:url(../public/stadium.jpg) #444;
   background-size:cover;
   padding-bottom:80px;
-  height: 125svh;
+  height: 130svh;
 }
-
+.nav {
+  flex-wrap: nowrap;
+}
 @media (min-width:768px) {
   .header-dark {
     padding-bottom:120px;
@@ -104,7 +104,12 @@
   font-size:14px;
   color:#37434d;
 }
-
+.dropdown-item {
+}
+.dropdown-item:hover {
+  color: #1E88E5 !important;
+  transition: .4s;
+}
 .header-dark .navbar .dropdown-menu .dropdown-item:focus, .header-dark .navbar .dropdown-menu .drodown-item:hover {
   background:#ebeff1;
 }
@@ -183,7 +188,9 @@
   color: #fff;
   text-decoration: none;
 }
-
+.breadcrumb-item a:hover {
+  text-decoration: none !important;
+}
 @import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
 
 body {
@@ -231,6 +238,7 @@ body {
   width: 100%;
   max-width: 100%;
   margin-bottom: 1rem;
+  border-radius: 5px;
   background-color: white;
   -webkit-box-shadow: 0px 0px 22px 8px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0px 0px 22px 8px rgba(34, 60, 80, 0.2);
@@ -360,7 +368,7 @@ h3{
 
 button {
   font-size: calc(12px + (13 - 12) * ((100vw - 360px) / (1600 - 320))) !important;
-  background-color: #2CA6FB !important;
+  background-color: #2CA6FB;
   padding-left:  calc(20px + (28 - 20) * ((100vw - 360px) / (1600 - 360))) !important; 
   padding-right: calc(20px + (28 - 20) * ((100vw - 360px) / (1600 - 360))) !important; 
   padding-top:  calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
@@ -377,12 +385,34 @@ button:focus {
 footer{
   color:#caced1 !important;
 }
+.btn--res {
+  background: #1E88E5 !important;
+  width: auto;
+}
+.btn--res:hover {
+  background: #2CA6FB !important;
+}
+.footer--link {
+  color:#caced1;
+}
 
+.footer--link:hover {
+  color: #fff;
+  transition: .4s;
+  cursor: pointer;
+}
 li{
    margin-top: 20px ;
    margin-bottom: 20px ;
 }
-
+.footer--res:hover {
+  color:rgb(0, 64, 166);
+  text-decoration: none;
+  cursor: pointer;
+}
+.logo-desc {
+  margin-left: 5px;
+}
 .Careers{ 
   cursor: pointer;
   color: #1E88E5;
@@ -403,9 +433,7 @@ li{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  -webkit-box-shadow: 0px 0px 11px -1px rgba(34, 60, 80, 0.2);
-  -moz-box-shadow: 0px 0px 11px -1px rgba(34, 60, 80, 0.2);
-  box-shadow: 0px 0px 11px -1px rgba(34, 60, 80, 0.2);
+  
 }
 .registrationForm h2 {
   color: #fff;
@@ -417,18 +445,32 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0 40px;
+  padding: 30px 30px 40px;
 }
 .regForm {
+  width: 460px;
   border-radius: 5px;
   background: #fff;
+}
+.regForm-exit {
+  height: 20px;
+  width: 20px;
+  margin-left: auto;
+}
+.regForm-exit svg:hover {
+  fill: #1E88E5;
+  transition: .4s;
+}
+.regForm-exit svg {
+  width: 100%;
+  height: 100%;
 }
 .form__input-field {
   display: flex;
   flex-direction: column;
 }
 input {
-  width: 300px;
+  width: 400px;
   height: 25px;
   margin-bottom: 10px;
 }
@@ -443,11 +485,14 @@ button {
   height: 50px;
   width: 200px;
   margin-top: 20px;
-  background-color: rgb(0, 64, 166);
+  background-color: #208f8f;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   font-size: 20px;
   color: white;
+}
+button:hover {
+  background-color: #269d9d;
 }
 
 
@@ -504,7 +549,9 @@ button {
   font-size: 29px;
  } */
 
-
+.breadcrumb {
+  padding:0 1.2rem;
+}
  /* ResultsPage ---------------------------*/
 
 .resultsPage {
@@ -520,6 +567,7 @@ button {
 .btn-light {
   background-color: #fff;
   border-color: #e4e4e4;
+
 }
 .list-menu {
   list-style: none;
@@ -529,6 +577,21 @@ button {
 .list-menu a {
   color: #343a40;
 }
+.list-menu a:hover {
+  color:rgb(0, 98, 255);
+}
+.fix-height a:hover {
+  color:rgb(0, 98, 255) !important;
+  transition: .4s;
+}
+
+.form-control {
+  color: #007bff;
+}
+.form-control:hover {
+  color: #0056B3;
+}
+
 .card-product-grid .info-wrap {
   overflow: hidden;
   padding: 18px 20px;
@@ -563,7 +626,8 @@ button {
   object-fit: cover;
 }
 .form--find {
-  width: 92%;
+  width: 100%;
+  padding: 0;
 }
 .fa-search {
   color: #fff;
@@ -582,10 +646,32 @@ button {
 .title:hover {
   text-decoration: none;
 }
+.log--button {
+  padding: 8px 30px !important;
+  margin-left: 10px;
+}
+.input-group {
+  display: block;
+}
+.input-group .form-control {
+  width: 100%;
+}
+.input-group-append button {
+  background-color: #007BFF;
+  width: 100%;
+}
+.input-group-append button:hover {
+  background-color: #0056B3;
+  transition: .4s;
+}
 
 
  /* Profile ---------------------------*/
 
+ .main-body {
+  background: #fff;
+  border-radius: 5px;
+ }
  .profile--info {
   height: 57px;
  }
@@ -642,4 +728,51 @@ button {
 }
 .shadow-none {
   box-shadow: none!important;
+}
+.submit {
+  background: #000;
+}
+@media (max-width: 1200px) {
+  .dropdown-toggle span {
+    display: none;
+  }
+}
+@media (max-width: 991.8px) {
+  .footer--link {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 420px) {
+  table {
+    font-size: 11px;
+  }
+  button {
+    width: 110px;
+  }
+}
+@media (max-width: 767.8px) {
+  .hero-link {
+    color: #fff;
+  }
+  small {
+    font-size: 60%;
+  }
+  .footer--link {
+    font-size: 0.75rem;
+  }
+  
+}
+@media (max-width: 575.8px) {
+  .regForm {
+    width: 100%;
+  }
+  .form__input-field {
+    width: 100%;
+  }
+  .form__input-field input {
+    width: 100%;
+  }
+  form button {
+    width: 100%;
+  }
 }

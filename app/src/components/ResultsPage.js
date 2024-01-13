@@ -5,6 +5,12 @@ export default function ResultsPage() {
     return (
         <div className="container">
 			<div className="resultsPage">
+			  <nav aria-label="breadcrumb" class="main-breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Результаты выступлений спортсменов</li>
+                </ol>
+              </nav>
 			<div className="row">
 				<aside className="col-md-3">
 					<div className="card">
@@ -209,7 +215,7 @@ export default function ResultsPage() {
 					</div>
 				</div>
 				<a href="#" className="btn btn-block btn-primary">
-					<Link to="/perfomancesPage" className='resultsPage-link'>Посмотреть результаты</Link>					
+					<Link to="/perfomancesPage" className='resultsPage-link'>Результаты</Link>					
 				</a>
 			</figcaption>
 		</figure>
@@ -231,7 +237,7 @@ export default function ResultsPage() {
 					</div>
 				</div>
 				<a href="#" className="btn btn-block btn-primary">
-					<Link to="/perfomancesPage" className='resultsPage-link'>Посмотреть результаты</Link>					
+					<Link to="/perfomancesPage" className='resultsPage-link'>Результаты</Link>					
 				</a>
 			</figcaption>
 		</figure>
@@ -253,7 +259,7 @@ export default function ResultsPage() {
 					</div>
 				</div>
 				<a href="#" className="btn btn-block btn-primary">
-					<Link to="/perfomancesPage" className='resultsPage-link'>Посмотреть результаты</Link>					
+					<Link to="/perfomancesPage" className='resultsPage-link'>Результаты</Link>					
 				</a>
 			</figcaption>
 		</figure>
@@ -275,7 +281,7 @@ export default function ResultsPage() {
 					</div>
 				</div>
 				<a href="#" className="btn btn-block btn-primary">
-					<Link to="/perfomancesPage" className='resultsPage-link'>Посмотреть результаты</Link>					
+					<Link to="/perfomancesPage" className='resultsPage-link'>Результаты</Link>					
 				</a>
 			</figcaption>
 		</figure>
@@ -297,7 +303,7 @@ export default function ResultsPage() {
 					</div>
 				</div>
 				<a href="#" className="btn btn-block btn-primary">
-					<Link to="/perfomancesPage" className='resultsPage-link'>Посмотреть результаты</Link>					
+					<Link to="/perfomancesPage" className='resultsPage-link'>Результаты</Link>					
 				</a>
 			</figcaption>
 		</figure>
@@ -319,7 +325,7 @@ export default function ResultsPage() {
 					</div>
 				</div>
 				<a href="#" className="btn btn-block btn-primary">
-					<Link to="/perfomancesPage" className='resultsPage-link'>Посмотреть результаты</Link>					
+					<Link to="/perfomancesPage" className='resultsPage-link'>Результаты</Link>					
 				</a>
 			</figcaption>
 		</figure>

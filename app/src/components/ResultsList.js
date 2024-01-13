@@ -29,6 +29,42 @@ export default function ResultsList() {
                     <td>Петров</td>
                     <td>Курск</td>
                 </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Иван</td>
+                    <td>Петров</td>
+                    <td>Курск</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Сергей</td>
+                    <td>Ветров</td>
+                    <td>Москва</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Иван</td>
+                    <td>Петров</td>
+                    <td>Курск</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Иван</td>
+                    <td>Петров</td>
+                    <td>Курск</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Сергей</td>
+                    <td>Ветров</td>
+                    <td>Москва</td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>Иван</td>
+                    <td>Петров</td>
+                    <td>Курск</td>
+                </tr>
                 </tbody>
             </table>
         </div>
